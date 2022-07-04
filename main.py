@@ -26,7 +26,7 @@ if __name__ == "__main__":
     if ( dataset[0].isdigit()):
         print("Error! The given dataset name starts with number")
     else:
-        classi = classifiers(classifier, dataset ,source_data,scaling)
+        classi = classifiers(classifier, dataset ,scaling)
         classi.read_dataset()
         classi.run_classifier()
   
