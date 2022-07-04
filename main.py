@@ -16,7 +16,6 @@ if __name__ == "__main__":
     arguments.add_argument('--scaling',type=str,help='for feature scaling enter 1')
     args = arguments.parse_args()
     classifier = args.classifier
-    source_data = args.sourceOfData
     scaling = args.scaling
 
     
