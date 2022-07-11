@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Perceptron
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import *
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
@@ -104,4 +104,9 @@ class classifiers():
             print("Error not a valid classifier")
         print('Misclassified samples: %d' % (self.y_test != y_pred).sum())
         print('Accuracy OF Testing: %.2f'  %accuracy_score(self.y_test, y_pred))
+        #plot_confusion_matrix(model, X_test, y_test, cmap='GnBu')
+        #plt.show()
+        print('Precision: %.3f' %precision_score(self.y_test, y_pred))
+        print('Recall: %.3f' %recall_score(self.y_test, y_pred))
+        print('F1: %.3f' %f1_score(self.y_test, y_pred))
         print (" Excuation time", (End_time- start_time))   
