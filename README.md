@@ -8,6 +8,11 @@ The data set consists of 14 EEG values and a value indicating the eye state. The
 ## Conclusion
 
 ## To run the code:
+For the Arguments:
+--classifier-- for 'classifier name'
+--dataset-- for 'dataset name'
+--scaling--  for 'feature scaling enter 1'
+Examples:
 python main.py --classifier  KNN --scaling 1  --dataset  EEGEyeState.ARFF
 python main.py --classifier LinearSVM --scaling 1  --dataset  EEGEyeState.ARFF
 python main.py --classifier RBFSVM --scaling 1  --dataset  EEGEyeState.ARFF
